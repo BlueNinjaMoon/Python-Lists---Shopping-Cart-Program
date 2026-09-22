@@ -24,7 +24,6 @@ while True:
     taxlist.append(tax)
     finaltotal = itemsubtotal + tax
     finaltotallist.append(finaltotal)
-    print(foodlist, quantitylist, pricelist, itemsubtotallist, taxlist, finaltotallist)
 if maxindex == -1:
     print("Nothing was ordered.")
 else:
@@ -40,7 +39,7 @@ else:
             tax1 = taxlist[maxindex] + taxlist[maxindex-1]
             subtotal1 = itemsubtotallist[maxindex] + itemsubtotallist[maxindex-1]
     print("---------------------------------------")
-    print(f"Subtotal: {subtotal1}")
-    print(f"Tax (6%): {tax1}")
-    print(f"Total: {finaltotal1}")
+    print(f"Subtotal: {subtotal1:.2f}")
+    print(f"Tax (6%): {tax1:.2f}")
+    print(f"Total: {finaltotal1:.2f}")
     print("---------------------------------------")
