@@ -28,7 +28,7 @@ if maxindex == -1:
     print("Nothing was ordered.")
 else:
     print("--------------- RECEIPT ---------------")
-    while maxindex > -1:
+    for maxindex in range(len(foodlist)):
             print(f"{foodlist[maxindex]}")
             print(f"Price: {pricelist[maxindex]}")
             print(f"Quantity: {quantitylist[maxindex]}")
